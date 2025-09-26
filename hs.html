@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Import/Export Menu Card</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url("https://wallpapercave.com/wp/wp10731177.jpg");
+
+      margin: 0;
+      padding: 20px;
+    }
+
+    .card {
+      max-width: 600px;
+      background-color: #fff;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    select,
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: orange;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+      </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Super Speed Cargo & Logistics</h2>
+
+    <!-- HS Code Dropdown -->
+    <label for="hs-code">Select Item (HS Code):</label>
+    <select id="hs-code" name="hs-code">
+      <option value="">-- Select HS Code --</option>
+      <option value="98041000">Drugs and medicines (98041000)</option>
+      <option value="1006">Rice (pre-packaged and labelled)(1006)</option>
+      <option value="870310">Vehicles for the transport of persons on snow; golf cars and similar vehicles ,Products include: Electric Vehicles(870310)</option>
+      <option value="6101">cloths all types (6101)</option>
+      <option value="23091000">Dog or cat food(23091000)</option>
+    </select>
+
+    <!-- From Location -->
+    <label for="from-location">From (Origin):</label>
+    <select id="from-location" name="from-location">
+      <option value="">-- Select Country --</option>
+      <option value="china">China</option>
+      <option value="india">India</option>
+      <option value="germany">Germany</option>
+      <option value="usa">USA</option>
+      <option value="uae">UAE</option>
+    </select>
+
+    <!-- To Location -->
+    <label for="to-location">To (Destination):</label>
+    <select id="to-location" name="to-location">
+      <option value="">-- Select Country --</option>
+      <option value="china">China</option>
+      <option value="india">India</option>
+      <option value="germany">Germany</option>
+      <option value="usa">USA</option>
+      <option value="uae">UAE</option>
+    </select>
+
+    <!-- Delivery Service -->
+    <label for="delivery-service">Select Delivery Service:</label>
+    <select id="delivery-service" name="delivery-service">
+      <option value="">-- Select Service --</option>
+      <option value="dhl">Air Freight</option>
+      <option value="fedex">Sea Freight</option>
+      <option value="ups">Road Transport</option>
+      <option value="aramex">Railway Freight</option>
+          </select>
+
+    <!-- Submit Button -->
+    <button type="submit"><a href="sub.html">Submit</a></button>
+  </div>
+</body>
+</html>
